@@ -8,4 +8,13 @@ RSpec.describe TddAlu0100881165 do
   it "does something useful" do
     expect(true).to eq(true)
   end
+
+describe Alimento do
+	context "probando intacia de la clase" do
+		it "se ha de poder instanciar un alimento" do
+			expect(Alimento.new()).to eq(expected)
+		end
+	end	
+end
+
 end
