@@ -1,4 +1,4 @@
-require 'tdd_alu0100881165'
+require 'lib/tdd_alu0100881165'
 
 RSpec.describe TddAlu0100881165 do
   it "has a version number" do
@@ -8,13 +8,13 @@ RSpec.describe TddAlu0100881165 do
   it "does something useful" do
     expect(true).to eq(true)
   end
+end
 
 describe Alimento do
 	context "probando intacia de la clase" do
 		it "se ha de poder instanciar un alimento" do
-			expect(Alimento.new()).to eq(expected)
+			@variable = Alimento.new
+			expect(@alimento).to be_a Alimento
 		end
 	end	
-end
-
 end
